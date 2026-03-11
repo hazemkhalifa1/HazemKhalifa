@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazem Khalifa | Backend Developer (.NET Core)</title>
+    <meta name="description" content="Portfolio of Hazem Khalifa, an ASP.NET Backend Developer specializing in scalable RESTful APIs, Clean Architecture, and performance optimization.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt; Hazem /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section-padding">
+            <div class="hero-content fade-in-up">
+                <div class="hero-text">
+                    <p class="greeting">Hi, I'm</p>
+                    <h1 class="gradient-text">Hazem Khalifa</h1>
+                    <h2 class="role">Backend Developer (.NET Core)</h2>
+                    <p class="summary">
+                        Passionate about writing clean, maintainable code and building production-ready systems.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <img src="Hazem.jpeg" alt="Hazem Khalifa" class="hero-image" onerror="this.src='https://ui-avatars.com/api/?name=Hazem+Khalifa&background=0D8ABC&color=fff&size=500';">
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding glass-section">
+            <div class="container reveal">
+                <h3 class="section-title">About Me</h3>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            ASP.NET Backend Developer with hands-on experience building scalable RESTful APIs using 
+                            <strong>ASP.NET Core, EF Core, and SQL Server</strong>.
+                        </p>
+                        <p>
+                            I have a strong foundation in Clean Architecture, JWT authentication, caching, and performance optimization.
+                            My goal is to design robust backend architectures that serve as solid foundations for complex web applications.
+                        </p>
+                        <ul class="quick-facts">
+                            <li><i class="fa-solid fa-location-dot"></i> El Salam, Cairo</li>
+                            <li><i class="fa-solid fa-graduation-cap"></i> Banha University, CS & AI (2020 - 2024)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container reveal">
+                <h3 class="section-title">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category card">
+                        <h4><i class="fa-solid fa-code"></i> Languages & Databases</h4>
+                        <div class="skill-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category card">
+                        <h4><i class="fa-solid fa-server"></i> Backend</h4>
+                        <div class="skill-tags">
+                            <span class="tag">ASP.NET Core</span>
+                            <span class="tag">Web API</span>
+                            <span class="tag">MVC</span>
+                            <span class="tag">EF Core</span>
+                            <span class="tag">LINQ</span>
+                        </div>
+                    </div>
+                    <div class="skill-category card">
+                        <h4><i class="fa-solid fa-layer-group"></i> Architecture & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="tag">Clean Architecture</span>
+                            <span class="tag">Repository Pattern</span>
+                            <span class="tag">Unit of Work</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Visual Studio</span>
+                        </div>
+                    </div>
+                    <div class="skill-category card">
+                        <h4><i class="fa-solid fa-users"></i> Soft Skills</h4>
+                        <div class="skill-tags">
+                            <span class="tag">Problem-solving</span>
+                            <span class="tag">Collaboration</span>
+                            <span class="tag">Communication</span>
+                            <span class="tag">Server Mgmt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section-padding glass-section">
+            <div class="container reveal">
+                <h3 class="section-title">Professional Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h4>Dotnet Developer</h4>
+                                    <h5>ELC</h5>
+                                </div>
+                                <span class="date-badge">Aug 2024 – Nov 2025</span>
+                            </div>
+                            <ul class="experience-list">
+                                <li>Optimized complex LINQ queries and applied in-memory caching, improving API response time and increasing system throughput by 20%.</li>
+                                <li>Automated deployment scripts and monitoring processes, reducing server downtime by 15% and maintaining 99.9% uptime.</li>
+                                <li>Collaborated within Agile/Scrum teams to deliver 5+ ASP.NET Core applications supporting business operations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container reveal">
+                <h3 class="section-title">Featured Projects</h3>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Talabat – Food Delivery Web API</h4>
+                                <div class="project-links">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </div>
+                            </div>
+                            <p class="tech-stack">ASP.NET Core, EF Core, SQL Server, JWT, Redis</p>
+                            <ul class="project-details">
+                                <li>Designed and developed a scalable RESTful Web API using Onion Architecture.</li>
+                                <li>Implemented ASP.NET Core Identity with JWT and role-based authorization.</li>
+                                <li>Built a clean data access layer using Repository, Unit of Work, and Specification patterns.</li>
+                                <li>Integrated Redis caching, global exception handling, and request validation.</li>
+                                <li>Designed the system to be SaaS-ready for future multi-tenant support.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Tazkarti – Event Booking System</h4>
+                                <div class="project-links">
+                                    <i class="fa-solid fa-ticket"></i>
+                                </div>
+                            </div>
+                            <p class="tech-stack">ASP.NET Core MVC, EF Core, SQL Server, Identity, JWT</p>
+                            <ul class="project-details">
+                                <li>Developed an event booking system for browsing events, reserving tickets, and managing bookings.</li>
+                                <li>Implemented Identity and JWT authentication to secure user access and roles.</li>
+                                <li>Applied Repository, Unit of Work, and Specification patterns for maintainable data access.</li>
+                                <li>Enforced business rules for ticket availability and booking validation using a 3-Layer Architecture.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Project 3 (Graduation) -->
+                    <div class="project-card card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Hybrid Encryption System</h4>
+                                <div class="project-links">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                            </div>
+                            <p class="tech-stack">C# (Graduation Project)</p>
+                            <ul class="project-details">
+                                <li>Developed a hybrid encryption algorithm with a focus on performance and accuracy.</li>
+                                <li>Achieved ~30% faster encryption speed through algorithm optimization.</li>
+                                <li>Balanced security, performance, and real-time processing requirements.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education & Certifications -->
+        <section id="education" class="education section-padding glass-section">
+            <div class="container reveal">
+                <h3 class="section-title">Education & Certifications</h3>
+                <div class="edu-grid">
+                    <div class="edu-card card flex-1">
+                        <h4><i class="fa-solid fa-building-columns"></i> Education</h4>
+                        <div class="edu-item">
+                            <h5>Banha University</h5>
+                            <p class="degree">Bachelor of Computers and Artificial Intelligence</p>
+                            <p class="date">2020 – 2024 | Grade: Very Good</p>
+                        </div>
+                    </div>
+                    <div class="edu-card card flex-1">
+                        <h4><i class="fa-solid fa-certificate"></i> Certifications</h4>
+                        <div class="edu-item">
+                            <h5>Full-Stack .NET Core Certification</h5>
+                            <p class="degree">ITI (Summer 2024)</p>
+                            <p class="detail">Built real-world applications using .NET Core, LINQ, and SQL Server.</p>
+                        </div>
+                        <div class="edu-item mt-3">
+                            <h5>ASP.NET Core and SQL Server Diploma</h5>
+                            <p class="degree">Route Academy (Nov 2023 - May 2024)</p>
+                            <p class="detail">Focused on database optimization and Web API development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container reveal">
+                <div class="contact-box card">
+                    <h3 class="gradient-text">Let's Work Together</h3>
+                    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <div class="contact-info">
+                        <a href="mailto:hazemkhalifa1250@gmail.com" class="contact-link">
+                            <i class="fa-solid fa-envelope"></i> hazemkhalifa1250@gmail.com
+                        </a>
+                        <a href="tel:+201554532035" class="contact-link">
+                            <i class="fa-solid fa-phone"></i> +20 155 453 2035
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/hazem-khalifa-80b8a3258" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/hazemkhalifa1" target="_blank" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Hazem Khalifa. Built with modern web technologies.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
