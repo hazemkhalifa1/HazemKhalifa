@@ -764,3 +764,12 @@ footer {
         left: -6px;
     }
 }
+
+/* Project Links */
+.project-title-link {
+    transition: var(--transition-standard);
+}
+
+.project-title-link:hover {
+    color: var(--accent-primary);
+}
