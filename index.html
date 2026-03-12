@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hazem Khalifa | Backend Developer (.NET Core)</title>
-    <meta name="description" content="Portfolio of Hazem Khalifa, an ASP.NET Backend Developer specializing in scalable RESTful APIs, Clean Architecture, and performance optimization.">
+    <meta name="description"
+        content="Portfolio of Hazem Khalifa, an ASP.NET Backend Developer specializing in scalable RESTful APIs, Clean Architecture, and performance optimization.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -48,7 +52,8 @@
                     </div>
                 </div>
                 <div class="hero-image-container">
-                    <img src="Hazem.jpeg" alt="Hazem Khalifa" class="hero-image" onerror="this.src='https://ui-avatars.com/api/?name=Hazem+Khalifa&background=0D8ABC&color=fff&size=500';">
+                    <img src="Hazem.jpeg" alt="Hazem Khalifa" class="hero-image"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Hazem+Khalifa&background=0D8ABC&color=fff&size=500';">
                     <div class="glow-effect"></div>
                 </div>
             </div>
@@ -61,12 +66,14 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <p>
-                            ASP.NET Backend Developer with hands-on experience building scalable RESTful APIs using 
+                            ASP.NET Backend Developer with hands-on experience building scalable RESTful APIs using
                             <strong>ASP.NET Core, EF Core, and SQL Server</strong>.
                         </p>
                         <p>
-                            I have a strong foundation in Clean Architecture, JWT authentication, caching, and performance optimization.
-                            My goal is to design robust backend architectures that serve as solid foundations for complex web applications.
+                            I have a strong foundation in Clean Architecture, JWT authentication, caching, and
+                            performance optimization.
+                            My goal is to design robust backend architectures that serve as solid foundations for
+                            complex web applications.
                         </p>
                         <ul class="quick-facts">
                             <li><i class="fa-solid fa-location-dot"></i> El Salam, Cairo</li>
@@ -93,9 +100,12 @@
                                 <span class="date-badge">Aug 2024 – Nov 2025</span>
                             </div>
                             <ul class="experience-list">
-                                <li>Optimized complex LINQ queries and applied in-memory caching, improving API response time and increasing system throughput by 20%.</li>
-                                <li>Automated deployment scripts and monitoring processes, reducing server downtime by 15% and maintaining 99.9% uptime.</li>
-                                <li>Collaborated within Agile/Scrum teams to deliver 5+ ASP.NET Core applications supporting business operations.</li>
+                                <li>Optimized complex LINQ queries and applied in-memory caching, improving API response
+                                    time and increasing system throughput by 20%.</li>
+                                <li>Automated deployment scripts and monitoring processes, reducing server downtime by
+                                    15% and maintaining 99.9% uptime.</li>
+                                <li>Collaborated within Agile/Scrum teams to deliver 5+ ASP.NET Core applications
+                                    supporting business operations.</li>
                             </ul>
                         </div>
                     </div>
@@ -112,18 +122,39 @@
                     <div class="project-card card">
                         <div class="project-content">
                             <div class="project-header">
-                                <h4><a href="https://github.com/hazemkhalifa1/Talabat" target="_blank" class="project-title-link">Talabat – Food Delivery Web API</a></h4>
+                                <div>
+                                    <h4><a href="http://talabat.somee.com/swagger/index.html" target="_blank"
+                                            class="project-title-link">Talabat – Food Delivery Web API</a></h4>
+                                    <div style="margin-top: 8px; font-size: 0.9rem; display: flex; gap: 15px;">
+                                        <a href="https://github.com/hazemkhalifa1/Talabat" target="_blank"
+                                            class="project-title-link"><i class="fa-brands fa-github"></i> Source
+                                            Code</a>
+                                        <a href="http://talabat.somee.com/swagger/index.html" target="_blank"
+                                            class="project-title-link"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                                    </div>
+                                </div>
                                 <div class="project-links">
                                     <i class="fa-solid fa-utensils"></i>
                                 </div>
                             </div>
-                            <p class="tech-stack">ASP.NET Core, EF Core, SQL Server, JWT, Redis</p>
+                            <p class="tech-stack">ASP.NET Core - Entity Framework Core - SQL Server - ASP.NET Core
+                                Identity - JWT Authentication - Redis - Stripe API - FluentValidation - AutoMapper </p>
                             <ul class="project-details">
-                                <li>Designed and developed a scalable RESTful Web API using Onion Architecture.</li>
-                                <li>Implemented ASP.NET Core Identity with JWT and role-based authorization.</li>
-                                <li>Built a clean data access layer using Repository, Unit of Work, and Specification patterns.</li>
-                                <li>Integrated Redis caching, global exception handling, and request validation.</li>
-                                <li>Designed the system to be SaaS-ready for future multi-tenant support.</li>
+                                <li>Built a scalable RESTful Web API for a Talabat-like food delivery platform using
+                                    ASP.NET Core and Onion Architecture.</li>
+                                <li>Implemented ASP.NET Core Identity with JWT authentication and role-based
+                                    authorization to manage secure user access.</li>
+                                <li>Developed core e-commerce features including product catalog, basket management,
+                                    order creation, and checkout workflow.</li>
+                                <li>Applied Repository, Unit of Work, and Specification patterns to create a clean and
+                                    maintainable data access layer.</li>
+                                <li>Integrated Redis caching to improve performance and reduce database load.</li>
+                                <li>Added FluentValidation for request validation and Global Exception Handling for
+                                    consistent API error responses.</li>
+                                <li>Implemented pagination, filtering, and sorting to optimize API performance and
+                                    usability.</li>
+                                <li>Used Stripe API to simulate secure online payment processing.</li>
                             </ul>
                         </div>
                     </div>
@@ -131,17 +162,21 @@
                     <div class="project-card card">
                         <div class="project-content">
                             <div class="project-header">
-                                <h4><a href="https://github.com/hazemkhalifa1/Tazkarti" target="_blank" class="project-title-link">Tazkarti – Event Booking System</a></h4>
+                                <h4><a href="https://github.com/hazemkhalifa1/Tazkarti" target="_blank"
+                                        class="project-title-link">Tazkarti – Event Booking System</a></h4>
                                 <div class="project-links">
                                     <i class="fa-solid fa-ticket"></i>
                                 </div>
                             </div>
                             <p class="tech-stack">ASP.NET Core MVC, EF Core, SQL Server, Identity, JWT</p>
                             <ul class="project-details">
-                                <li>Developed an event booking system for browsing events, reserving tickets, and managing bookings.</li>
+                                <li>Developed an event booking system for browsing events, reserving tickets, and
+                                    managing bookings.</li>
                                 <li>Implemented Identity and JWT authentication to secure user access and roles.</li>
-                                <li>Applied Repository, Unit of Work, and Specification patterns for maintainable data access.</li>
-                                <li>Enforced business rules for ticket availability and booking validation using a 3-Layer Architecture.</li>
+                                <li>Applied Repository, Unit of Work, and Specification patterns for maintainable data
+                                    access.</li>
+                                <li>Enforced business rules for ticket availability and booking validation using a
+                                    3-Layer Architecture.</li>
                             </ul>
                         </div>
                     </div>
@@ -149,14 +184,20 @@
                     <div class="project-card card">
                         <div class="project-content">
                             <div class="project-header">
+<<<<<<< HEAD
                                 <h4><a href="https://github.com/hazemkhalifa1/HybridEncryption" target="_blank" class="project-title-link">Hybrid Encryption System</a></h4>
+=======
+                                <h4><a href="https://github.com/hazemkhalifa1/HybridEncryption" target="_blank"
+                                        class="project-title-link">Hybrid Encryption System</a></h4>
+>>>>>>> 0cdb6f2 (edit talabat des)
                                 <div class="project-links">
                                     <i class="fa-solid fa-shield-halved"></i>
                                 </div>
                             </div>
                             <p class="tech-stack">C# (Graduation Project)</p>
                             <ul class="project-details">
-                                <li>Developed a hybrid encryption algorithm with a focus on performance and accuracy.</li>
+                                <li>Developed a hybrid encryption algorithm with a focus on performance and accuracy.
+                                </li>
                                 <li>Achieved ~30% faster encryption speed through algorithm optimization.</li>
                                 <li>Balanced security, performance, and real-time processing requirements.</li>
                             </ul>
@@ -165,7 +206,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Skills Section -->
         <section id="skills" class="skills section-padding">
             <div class="container reveal">
@@ -175,7 +216,12 @@
                         <h4><i class="fa-solid fa-code"></i> Languages & Databases</h4>
                         <div class="skill-tags">
                             <span class="tag">C#</span>
-                            <span class="tag">SQL</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
                         </div>
                     </div>
                     <div class="skill-category card">
@@ -194,6 +240,11 @@
                             <span class="tag">Clean Architecture</span>
                             <span class="tag">Repository Pattern</span>
                             <span class="tag">Unit of Work</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">Hangfire</span>
+                            <span class="tag">Serilog</span>
+                            <span class="tag">Unit Testing</span>
                             <span class="tag">JWT</span>
                             <span class="tag">Git</span>
                             <span class="tag">Visual Studio</span>
@@ -247,7 +298,8 @@
             <div class="container reveal">
                 <div class="contact-box card">
                     <h3 class="gradient-text">Let's Work Together</h3>
-                    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
+                        I'll try my best to get back to you!</p>
                     <div class="contact-info">
                         <a href="mailto:hazemkhalifa1250@gmail.com" class="contact-link">
                             <i class="fa-solid fa-envelope"></i> hazemkhalifa1250@gmail.com
@@ -257,8 +309,10 @@
                         </a>
                     </div>
                     <div class="social-links">
-                        <a href="https://linkedin.com/in/hazem-khalifa-80b8a3258" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/hazemkhalifa1" target="_blank" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/hazem-khalifa-80b8a3258" target="_blank" aria-label="LinkedIn"
+                            class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/hazemkhalifa1" target="_blank" aria-label="GitHub"
+                            class="social-icon"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -273,4 +327,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
