@@ -162,25 +162,41 @@
                     <div class="project-card card">
                         <div class="project-content">
                             <div class="project-header">
-                                <h4><a href="https://github.com/hazemkhalifa1/Tazkarti" target="_blank"
-                                        class="project-title-link">Tazkarti – Event Booking System</a></h4>
+                                <div>
+                                    <h4><a href="https://github.com/hazemkhalifa1/Tazkarti" target="_blank"
+                                            class="project-title-link">Tazkarti – Event Booking System</a></h4>
+                                    <div style="margin-top: 8px; font-size: 0.9rem; display: flex; gap: 15px;">
+                                        <a href="https://github.com/hazemkhalifa1/Tazkarti" target="_blank"
+                                            class="project-title-link"><i class="fa-brands fa-github"></i> Source
+                                            Code</a>
+                                    </div>
+                                </div>
                                 <div class="project-links">
                                     <i class="fa-solid fa-ticket"></i>
                                 </div>
                             </div>
-                            <p class="tech-stack">ASP.NET Core MVC, EF Core, SQL Server, Identity, JWT</p>
+                            <p class="tech-stack">ASP.NET Core MVC - Entity Framework Core - SQL Server - ASP.NET Core
+                                Identity - AutoMapper - N-Tier Architecture</p>
                             <ul class="project-details">
-                                <li>Developed an event booking system for browsing events, reserving tickets, and
-                                    managing bookings.</li>
-                                <li>Implemented Identity and JWT authentication to secure user access and roles.</li>
-                                <li>Applied Repository, Unit of Work, and Specification patterns for maintainable data
-                                    access.</li>
-                                <li>Enforced business rules for ticket availability and booking validation using a
-                                    3-Layer Architecture.</li>
+                                <li>Built a robust event ticketing application with comprehensive event management and
+                                    ticket booking capabilities for seamless user experiences.</li>
+                                <li>Designed and developed using a clean N-Tier Architecture, enforcing strict
+                                    separation of concerns across Data Access (DAL), Business Logic (BLL), and
+                                    Presentation layers.</li>
+                                <li>Implemented rigorous user authentication, secure registration, and role-based access
+                                    control (RBAC) utilizing ASP.NET Core Identity, configured with robust custom
+                                    password policies.</li>
+                                <li>Applied Repository and Unit of Work design patterns to completely abstract Entity
+                                    Framework Core database operations, ensuring transactional consistency and highly
+                                    maintainable repository code.</li>
+                                <li>Leveraged AutoMapper to facilitate efficient, clean, and complex object mapping
+                                    between internal domain Entities and presentation-layer ViewModels.</li>
+                                <li>Utilized Code-First Migrations with SQL Server for automated, version-controlled
+                                    relational database schema deployment and management.</li>
                             </ul>
                         </div>
                     </div>
-                    <!-- Project 3 (Graduation) -->
+                    <!-- Project 3 (Graduation)
                     <div class="project-card card">
                         <div class="project-content">
                             <div class="project-header">
@@ -198,7 +214,7 @@
                                 <li>Balanced security, performance, and real-time processing requirements.</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -209,10 +225,9 @@
                 <h3 class="section-title">Technical Skills</h3>
                 <div class="skills-grid">
                     <div class="skill-category card">
-                        <h4><i class="fa-solid fa-code"></i> Languages & Databases</h4>
+                        <h4><i class="fa-solid fa-code"></i> Languages</h4>
                         <div class="skill-tags">
                             <span class="tag">C#</span>
-                            <span class="tag">SQL Server</span>
                             <span class="tag">JavaScript</span>
                             <span class="tag">CSS</span>
                             <span class="tag">HTML</span>
@@ -220,49 +235,84 @@
                             <span class="tag">Java</span>
                         </div>
                     </div>
+
+                    <div class="skill-category card">
+                        <h4><i class="fa-solid fa-database"></i> Database</h4>
+                        <div class="skill-tags">
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">SQL Queries</span>
+                            <span class="tag">Views</span>
+                            <span class="tag">Stored Procedures</span>
+                            <span class="tag">Joins</span>
+                        </div>
+                    </div>
+
                     <div class="skill-category card">
                         <h4><i class="fa-solid fa-server"></i> Backend</h4>
                         <div class="skill-tags">
+                            <span class="tag">OOP</span>
                             <span class="tag">ASP.NET Core</span>
                             <span class="tag">Web API</span>
-                            <span class="tag">MVC</span>
-                            <span class="tag">EF Core</span>
+                            <span class="tag">ASP.NET Core MVC</span>
+                            <span class="tag">Entity Framework Core</span>
                             <span class="tag">LINQ</span>
                         </div>
                     </div>
+
                     <div class="skill-category card">
-                        <h4><i class="fa-solid fa-layer-group"></i> Architecture & Tools</h4>
+                        <h4><i class="fa-solid fa-layer-group"></i> Architecture & Patterns</h4>
                         <div class="skill-tags">
                             <span class="tag">Clean Architecture</span>
+                            <span class="tag">Onion Architecture</span>
+                            <span class="tag">N-Tier Architecture</span>
                             <span class="tag">Repository Pattern</span>
-                            <span class="tag">Unit of Work</span>
+                            <span class="tag">Unit of Work Pattern</span>
+                            <span class="tag">Specification Pattern</span>
+                            <span class="tag">Factory Pattern</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card">
+                        <h4><i class="fa-solid fa-shield-halved"></i> Authentication & Security</h4>
+                        <div class="skill-tags">
+                            <span class="tag">ASP.NET Core Identity</span>
+                            <span class="tag">JWT Authentication</span>
+                            <span class="tag">Role-Based Authorization</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card">
+                        <h4><i class="fa-solid fa-toolbox"></i> Tools & Technologies</h4>
+                        <div class="skill-tags">
                             <span class="tag">Redis</span>
-                            <span class="tag">Stripe</span>
                             <span class="tag">Hangfire</span>
                             <span class="tag">Serilog</span>
-                            <span class="tag">Unit Testing</span>
-                            <span class="tag">JWT</span>
+                            <span class="tag">Mapster</span>
+                            <span class="tag">Fluent Validation</span>
                             <span class="tag">Git</span>
                             <span class="tag">Visual Studio</span>
                         </div>
                     </div>
+
                     <div class="skill-category card">
-                        <h4><i class="fa-solid fa-users"></i> Soft Skills</h4>
+                        <h4><i class="fa-solid fa-lightbulb"></i> Concepts</h4>
                         <div class="skill-tags">
-                            <span class="tag">Problem-solving</span>
-                            <span class="tag">Collaboration</span>
-                            <span class="tag">Communication</span>
-                            <span class="tag">Server Mgmt</span>
+                            <span class="tag">RESTful APIs</span>
+                            <span class="tag">Caching</span>
+                            <span class="tag">Pagination</span>
+                            <span class="tag">Filtering</span>
+                            <span class="tag">Sorting</span>
+                            <span class="tag">Global Exception Handling</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Education & Certifications -->
+        <!-- Education & Internships -->
         <section id="education" class="education section-padding glass-section">
             <div class="container reveal">
-                <h3 class="section-title">Education & Certifications</h3>
+                <h3 class="section-title">Education & Internships</h3>
                 <div class="edu-grid">
                     <div class="edu-card card flex-1">
                         <h4><i class="fa-solid fa-building-columns"></i> Education</h4>
@@ -273,9 +323,9 @@
                         </div>
                     </div>
                     <div class="edu-card card flex-1">
-                        <h4><i class="fa-solid fa-certificate"></i> Certifications</h4>
+                        <h4><i class="fa-solid fa-briefcase"></i> Internships</h4>
                         <div class="edu-item">
-                            <h5>Full-Stack .NET Core Certification</h5>
+                            <h5>Full-Stack .NET Core Internship</h5>
                             <p class="degree">ITI (Summer 2024)</p>
                             <p class="detail">Built real-world applications using .NET Core, LINQ, and SQL Server.</p>
                         </div>
