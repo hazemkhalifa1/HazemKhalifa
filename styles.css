@@ -375,7 +375,7 @@ h5 {
    HERO SECTION
    ================================================ */
 .hero {
-    min-height: 115vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -947,6 +947,10 @@ h5 {
     color: #10b981;
 }
 
+.ps-label.impact {
+    color: var(--accent-primary);
+}
+
 /* Skills Table */
 .skills-table {
     max-width: 800px;
@@ -1049,6 +1053,17 @@ h5 {
     color: white;
 }
 
+.contact-email-btn.cv-btn {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.25);
+}
+
+.contact-email-btn.cv-btn:hover {
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
+    transform: translateY(-2px);
+}
+
 .tech-chips span {
     font-size: 0.72rem;
     font-weight: 700;
@@ -1118,6 +1133,75 @@ h5 {
     border-color: var(--accent-primary);
     color: var(--accent-primary);
     background: rgba(99, 102, 241, 0.08);
+}
+
+/* ================================================
+   WHY ME SECTION
+   ================================================ */
+.why-me-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.why-me-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-me-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 0 0 4px 4px;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.why-me-card:hover::before {
+    opacity: 1;
+}
+
+.why-me-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.15));
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--accent-primary);
+    margin: 0 auto 1.5rem;
+    transition: var(--transition);
+}
+
+.why-me-card:hover .why-me-icon {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px var(--accent-glow);
+}
+
+.why-me-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.why-me-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.65;
 }
 
 /* ================================================
