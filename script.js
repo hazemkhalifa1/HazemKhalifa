@@ -49,28 +49,4 @@ document.querySelectorAll('.reveal').forEach(el => {
     revealOnScroll.observe(el);
 });
 
-// Swiper Initialization for Skills
-const skillSwiper = new Swiper('.skill-swiper', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: false,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    navigation: {
-        prevEl: '#skill-prev',
-        nextEl: '#skill-next',
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 24,
-        },
-    }
-});
+
