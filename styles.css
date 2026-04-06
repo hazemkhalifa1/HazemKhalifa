@@ -70,6 +70,11 @@ img {
     display: block;
 }
 
+::selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
 h1,
 h2,
 h3,
@@ -149,7 +154,7 @@ h5 {
 .card:hover {
     border-color: var(--card-border-glow);
     box-shadow: var(--card-shadow-hover);
-    transform: translateY(-6px);
+    transform: translateY(-4px);
 }
 
 /* ================================================
@@ -375,13 +380,19 @@ h5 {
    HERO SECTION
    ================================================ */
 .hero {
-    min-height: 120vh;
+    min-height: 125vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
     padding-top: 80px;
+}
+
+.hero-impact {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
 }
 
 .hero-content {
@@ -862,7 +873,7 @@ h5 {
 }
 
 .project-metadata {
-    padding: 1.75rem;
+    padding: 2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -893,10 +904,10 @@ h5 {
 .p-bullets li {
     position: relative;
     padding-left: 1.2rem;
-    margin-bottom: 0.7rem;
     color: var(--text-secondary);
     font-size: 0.92rem;
-    line-height: 1.5;
+    margin-bottom: 0.9rem;
+    line-height: 1.65;
 }
 
 .p-bullets li::before {
@@ -1369,6 +1380,11 @@ footer p {
     backdrop-filter: blur(8px);
     border-top: 1px solid var(--card-border);
     border-bottom: 1px solid var(--card-border);
+}
+
+strong {
+    color: var(--text-primary);
+    font-weight: 700;
 }
 
 /* ================================================
