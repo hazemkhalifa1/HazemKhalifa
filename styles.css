@@ -375,7 +375,7 @@ h5 {
    HERO SECTION
    ================================================ */
 .hero {
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -871,7 +871,7 @@ h5 {
 .p-title {
     font-size: 1.35rem;
     font-weight: 700;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
     color: var(--text-primary);
 }
 
@@ -893,7 +893,7 @@ h5 {
 .p-bullets li {
     position: relative;
     padding-left: 1.2rem;
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.7rem;
     color: var(--text-secondary);
     font-size: 0.92rem;
     line-height: 1.5;
