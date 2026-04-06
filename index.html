@@ -177,17 +177,25 @@
                     <div class="project-card card">
                         <div class="project-image-box">
                             <div class="project-icon-large"><i class="fa-solid fa-wallet"></i></div>
+                            <div class="project-links-overlay">
+                                <a class="p-link"><i class="fa-solid fa-lock"></i> Private Client Project</a>
+                            </div>
                         </div>
                         <div class="project-metadata">
                             <h4 class="p-title">ERP Financial System</h4>
                             <ul class="p-bullets">
-                                <li>Built financial transaction management using <strong>ASP.NET Core MVC</strong> and
-                                    N-Tier Architecture</li>
-                                <li>Implemented secure multi-role access with <strong>ASP.NET Identity</strong></li>
-                                <li>Integrated <strong>AutoMapper</strong> for clean DTO mapping and
-                                    <strong>Serilog</strong> for structured logging
-                                </li>
-                                <li>Added <strong>PDF export</strong> for financial reports and audit trails</li>
+                                <li>Built a financial transaction management system using <strong>ASP.NET Core
+                                        MVC</strong> and <strong>N-Tier Architecture</strong>.</li>
+                                <li>Implemented <strong>Repository</strong>, <strong>Unit of Work</strong>, and
+                                    <strong>Factory</strong> Design patterns for a clean, maintainable codebase.</li>
+                                <li>Integrated <strong>ASP.NET Core Identity</strong> with role-based authorization for
+                                    secure multi-user access.</li>
+                                <li>Automated background tasks using <strong>ASP.NET Core BackgroundService</strong> for
+                                    scheduled financial processing.</li>
+                                <li>Used <strong>AutoMapper</strong>, <strong>Fluent Validation</strong>, and
+                                    <strong>Serilog</strong> for mapping, input validation, and structured logging.</li>
+                                <li>Generated <strong>financial reports</strong> with <strong>PDF export</strong>
+                                    support.</li>
                             </ul>
                             <div class="p-ps">
                                 <p><span class="ps-label problem">🔹 Problem</span> Businesses need a reliable system to
@@ -197,9 +205,16 @@
                             </div>
                             <div class="tech-chips">
                                 <span>ASP.NET Core MVC</span>
+                                <span>N-Tier</span>
                                 <span>Identity</span>
+                                <span>Repository</span>
+                                <span>Unit of Work</span>
+                                <span>Factory</span>
+                                <span>BackgroundService</span>
                                 <span>AutoMapper</span>
+                                <span>Fluent Validation</span>
                                 <span>Serilog</span>
+                                <span>PDF Export</span>
                             </div>
                         </div>
                     </div>
@@ -218,15 +233,15 @@
                         <div class="project-metadata">
                             <h4 class="p-title">Talabat – Food Delivery API</h4>
                             <ul class="p-bullets">
-                                <li>Built 15+ RESTful endpoints using <strong>ASP.NET Core Web API</strong> and Onion
-                                    Architecture</li>
-                                <li>Implemented <strong>JWT Authentication</strong> with role-based authorization
-                                    (Admin, Vendor, Customer)</li>
-                                <li>Integrated <strong>Redis caching</strong> to reduce database load and improve
-                                    response time</li>
-                                <li>Applied <strong>Repository &amp; Unit of Work</strong> patterns for clean data
-                                    access</li>
-                                <li>Integrated <strong>Stripe</strong> payment gateway for order checkout</li>
+                                <li>Engineered a <strong>RESTful API</strong> with 15+ endpoints using <strong>ASP.NET
+                                        Core</strong> and <strong>Onion Architecture</strong>.</li>
+                                <li>Integrated <strong>Redis caching</strong> to reduce database query load by
+                                    <strong>30%</strong>, with <strong>JWT-based</strong> authentication supporting
+                                    Admin, Vendor, and Customer role-based authorization.</li>
+                                <li>Architected a clean data access layer using <strong>Repository</strong>,
+                                    <strong>Unit of Work</strong>, and <strong>Specification</strong> patterns.</li>
+                                <li>Established <strong>global exception handling</strong> and <strong>request
+                                        validation</strong> to improve system reliability.</li>
                             </ul>
                             <div class="p-ps">
                                 <p><span class="ps-label problem">🔹 Problem</span> Customers need a fast, reliable way
@@ -235,9 +250,13 @@
                                     with secure auth, caching, and payment integration</p>
                             </div>
                             <div class="tech-chips">
+                                <span>ASP.NET Core</span>
+                                <span>Onion Architecture</span>
                                 <span>Redis</span>
                                 <span>JWT</span>
-                                <span>Onion Arch</span>
+                                <span>Repository</span>
+                                <span>Unit of Work</span>
+                                <span>Specification</span>
                                 <span>Stripe</span>
                                 <span>SQL Server</span>
                             </div>
@@ -258,15 +277,10 @@
                         <div class="project-metadata">
                             <h4 class="p-title">Tazkarti – Event Booking System</h4>
                             <ul class="p-bullets">
-                                <li>Built scalable RESTful APIs using <strong>ASP.NET Core</strong></li>
-                                <li>Implemented <strong>JWT Authentication</strong> &amp; Role-based Authorization</li>
-                                <li>Applied <strong>Clean Architecture</strong> &amp; Repository Pattern</li>
-                                <li>Integrated <strong>Redis caching</strong> to improve performance</li>
-                                <li>Added background jobs using <strong>Hangfire</strong> and PDF tickets via
-                                    <strong>jsPDF</strong>
-                                </li>
-                                <li>Supported <strong>multilingual (EN/AR) RTL</strong> layout with full localization
-                                </li>
+                                <li>Created a ticket reservation system with <strong>ASP.NET Core 10 MVC</strong>, <strong>N-Tier Architecture</strong> across 3 layers using <strong>Repository</strong> and <strong>Unit of Work</strong> patterns.</li>
+                                <li>Integrated <strong>Stripe Checkout</strong> for payments and <strong>ASP.NET Core Identity</strong> for 2+ role-based authentication.</li>
+                                <li>Delivered <strong>bilingual (EN/AR) RTL support</strong>, <strong>PDF ticket generation</strong> with <strong>QR codes</strong> and <strong>Arabic text reshaping</strong>.</li>
+                                <li>Authored <strong>20+ unit tests</strong> with <strong>xUnit and Moq</strong>, with <strong>Serilog</strong> for structured logging.</li>
                             </ul>
                             <div class="p-ps">
                                 <p><span class="ps-label problem">🔹 Problem</span> Users need a simple way to book
@@ -276,10 +290,18 @@
                             </div>
                             <div class="tech-chips">
                                 <span>ASP.NET Core 10</span>
+                                <span>MVC</span>
+                                <span>N-Tier</span>
+                                <span>Repository</span>
+                                <span>Unit of Work</span>
                                 <span>Stripe</span>
-                                <span>jsPDF</span>
+                                <span>Identity</span>
+                                <span>RTL Support</span>
+                                <span>PDF Export</span>
+                                <span>QR Code</span>
                                 <span>xUnit</span>
-                                <span>Hangfire</span>
+                                <span>Moq</span>
+                                <span>Serilog</span>
                             </div>
                         </div>
                     </div>
