@@ -355,6 +355,38 @@ h5 {
     transform: translateY(-2px);
 }
 
+.btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid rgba(99, 102, 241, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-secondary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(99, 102, 241, 0.05);
+    transition: var(--transition);
+    z-index: -1;
+}
+
+.btn-secondary:hover::before {
+    width: 100%;
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.12);
+}
+
 .btn-glow::after {
     content: '';
     position: absolute;
@@ -380,13 +412,14 @@ h5 {
    HERO SECTION
    ================================================ */
 .hero {
-    min-height: 125vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding: 120px 0 80px 0;
 }
 
 .hero-impact {
@@ -512,13 +545,28 @@ h5 {
 .hero-actions {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
+    width: fit-content;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hero-actions .divider {
+    width: 2px;
+    height: 30px;
+    background: rgba(15, 23, 42, 0.1);
+    border-radius: 2px;
 }
 
 .social-hero {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .social-icon-btn {
@@ -529,11 +577,11 @@ h5 {
     justify-content: center;
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 10px;
+    border-radius: 50%;
     font-size: 1.2rem;
     color: var(--text-secondary);
     transition: var(--transition);
-    box-shadow: var(--card-shadow);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
 }
 
 .social-icon-btn:hover {
@@ -1401,6 +1449,32 @@ strong {
     }
 }
 
+/* ================================================
+   NEW MODIFICATIONS (Featured Badge & Nav Active)
+   ================================================ */
+.featured-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a.active {
+    color: var(--accent-primary);
+    font-weight: 700;
+}
+
 @media (max-width: 768px) {
     .section-padding {
         padding: 70px 0;
@@ -1423,7 +1497,28 @@ strong {
     }
 
     .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-actions .divider {
+        width: 60px;
+        height: 2px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .action-buttons .btn {
+        width: 100%;
         justify-content: center;
+    }
+    
+    .social-hero {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero-subtext {

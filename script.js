@@ -58,4 +58,21 @@ document.querySelectorAll('.reveal').forEach(el => {
     revealOnScroll.observe(el);
 });
 
+// Active Link Highlight
+window.addEventListener('scroll', () => {
+    let sections = document.querySelectorAll('section');
+    let scrollPos = window.scrollY + 100;
+
+    sections.forEach(section => {
+        if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+            navLinksItems.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${section.id}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+});
+
 
