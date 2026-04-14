@@ -1559,4 +1559,24 @@ strong {
     .timeline-header {
         flex-direction: column;
     }
+
+    .skill-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.25rem 1rem;
+        text-align: center;
+    }
+
+    .skill-label {
+        justify-content: center;
+    }
+
+    .skill-tags {
+        justify-content: center;
+    }
+
+    .why-me-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
