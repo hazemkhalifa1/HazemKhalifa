@@ -4,35 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hazem Khalifa | Backend Developer (.NET Core)</title>
+    <title>Hazem Khalifa | Backend .NET Developer</title>
     <meta name="description"
-        content="Portfolio of Hazem Khalifa, an ASP.NET Backend Developer specializing in scalable RESTful APIs, Clean Architecture, and performance optimization.">
+        content="Portfolio of Hazem Khalifa — Backend .NET Developer specializing in scalable RESTful APIs, Clean Architecture, e-commerce systems, and performance optimization.">
     <meta name="keywords"
-        content="ASP.NET Core Developer, Backend Developer Egypt, .NET API Developer, Clean Architecture, SQL Server, Redis">
+        content="ASP.NET Core Developer, Backend Developer Egypt, .NET API Developer, Clean Architecture, SQL Server, Redis, SignalR, ERP, e-commerce API">
     <meta name="author" content="Hazem Khalifa">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <!-- FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Swiper.js CSS -->
 
+    <!-- Styles & Icons -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Interactive Background blobs -->
-    <div class="bg-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
+    <!-- Animated Background -->
+    <div class="bg-mesh"></div>
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
 
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">&lt; Hazem /&gt;</a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -49,13 +51,17 @@
     </nav>
 
     <main>
-        <!-- Hero Section -->
+        <!-- ═══════════════════════════════════
+             HERO SECTION
+        ═══════════════════════════════════ -->
         <section id="hero" class="hero">
             <div class="hero-content">
-                <div class="hero-text fade-in-up">
-                    <p class="greeting-badge">Open for Backend Opportunities</p>
-                    <h1 class="hero-title"><span class="text-glow">Hazem Mostafa</span> <span
-                            class="gradient-text">Khalifa</span></h1>
+                <div class="hero-text fade-in-up" style="animation-delay: 0.1s;">
+                    <p class="greeting-badge">Available for Backend Roles</p>
+                    <h1 class="hero-title">
+                        <span class="text-gradient-name">Hazem Mostafa</span><br>
+                        <span class="gradient-text">Khalifa</span>
+                    </h1>
                     <p class="hero-role">Backend .NET Developer</p>
                     <div class="hero-subtext">
                         <p>
@@ -63,61 +69,93 @@
                             <strong>ASP.NET Core</strong> — focused on performance, security, and real-world
                             reliability.
                         </p>
-
-                        <p class="hero-impact">
-                            Reduced API response time by 20% using Redis caching<br>
-                            Optimized database queries, improving performance by 35%<br>
-                            Built multi-tenant systems handling concurrent users efficiently
-                        </p>
+                        <div class="hero-impact">
+                            <span>Reduced API response time by 40% at Poktco (Saudi Arabia)</span>
+                            <span>Optimized database queries, improving performance by 35%</span>
+                            <span>Built multi-tenant systems handling concurrent users efficiently</span>
+                        </div>
                     </div>
                     <div class="hero-specializations">
                         <span class="spec-chip">Clean Architecture</span>
                         <span class="spec-chip">Performance Optimization</span>
                         <span class="spec-chip">Secure Auth (JWT)</span>
                         <span class="spec-chip">Redis Caching</span>
+                        <span class="spec-chip">CI/CD</span>
                     </div>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary btn-glow">View Projects <i
-                                class="fa-solid fa-code"></i></a>
+                        <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-code"></i></a>
                         <a href="Hazem_Mostafa_Khalifa_CV.pdf" download class="contact-email-btn cv-btn">
                             <i class="fa-solid fa-file-arrow-down"></i>
                             Download CV
                         </a>
                         <div class="social-hero">
-                            <a href="mailto:hazemkhalifa1250@gmail.com" class="social-icon-btn" title="Email"><i
-                                    class="fa-solid fa-envelope"></i></a>
-                            <a href="https://linkedin.com/in/hazem-khalifa-80b8a3258" target="_blank"
-                                class="social-icon-btn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/hazemkhalifa1" target="_blank" class="social-icon-btn"
-                                title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="mailto:hazemkhalifa1250@gmail.com" class="social-icon-btn" title="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/hazemkhalifa" target="_blank"
+                                class="social-icon-btn" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/hazemkhalifa1" target="_blank"
+                                class="social-icon-btn" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="hero-image-wrapper fade-in-up" style="animation-delay: 0.3s;">
+
+                <div class="hero-image-wrapper fade-in-up" style="animation-delay: 0.35s;">
+                    <div class="image-glow"></div>
+                    <div class="image-ring"></div>
                     <div class="image-inner">
                         <img src="Images/Hazem.jpeg" alt="Hazem Khalifa" class="hero-image" loading="lazy"
                             onerror="this.src='https://ui-avatars.com/api/?name=Hazem+Khalifa&background=6366f1&color=fff&size=500';">
                     </div>
-                    <div class="image-accent"></div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- ═══════════════════════════════════
+             STATS STRIP
+        ═══════════════════════════════════ -->
+        <div class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Projects Shipped</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Companies Served</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="40" data-suffix="%">0</span>
+                    <span class="stat-label">Peak Perf. Boost</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════
+             ABOUT SECTION
+        ═══════════════════════════════════ -->
         <section id="about" class="about section-padding glass-section">
             <div class="container reveal">
                 <div class="section-header">
                     <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-                    <div class="section-line"></div>
+                    <div class="section-divider"><div class="section-divider-dot"></div></div>
                 </div>
                 <div class="about-flex">
                     <div class="about-card card">
                         <div class="about-brief">
-                            <p>Backend .NET Developer with 2+ years of experience building scalable, production-ready
-                                APIs.</p>
-                            <p style="margin-top: 10px;">I specialize in designing clean architectures, optimizing
-                                performance, and delivering reliable backend systems used in real-world applications.
-                            </p>
+                            <p>Backend .NET Developer with 2+ years of experience building scalable,
+                                production-ready APIs and enterprise applications.</p>
+                            <p>I specialize in designing clean architectures, optimizing performance,
+                                and delivering reliable backend systems — from ERP financial platforms
+                                and HR management systems to e-commerce APIs and real estate platforms.</p>
                         </div>
                         <div class="quick-facts-grid">
                             <div class="fact-item">
@@ -138,172 +176,306 @@
             </div>
         </section>
 
-        <!-- Experience Section -->
+        <!-- ═══════════════════════════════════
+             EXPERIENCE SECTION
+        ═══════════════════════════════════ -->
         <section id="experience" class="experience section-padding">
             <div class="container reveal">
                 <div class="section-header">
                     <h2 class="section-title">Career <span class="gradient-text">Milestones</span></h2>
-                    <div class="section-line"></div>
+                    <div class="section-divider"><div class="section-divider-dot"></div></div>
                 </div>
                 <div class="timeline">
-                    <div class="timeline-item card">
-                        <div class="timeline-header">
-                            <div class="timeline-role">
-                                <h4>Freelance .NET Developer</h4>
-                                <h5 class="company-name">Independent</h5>
+
+                    <!-- Freelance -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-role">
+                                    <h4>Freelance .NET Developer</h4>
+                                    <h5 class="company-name">Independent
+                                        <span class="location-tag">Egypt</span>
+                                    </h5>
+                                </div>
+                                <span class="date-badge">May 2025 – Present</span>
                             </div>
-                            <span class="date-badge">Nov 2025 – Present</span>
+                            <ul class="experience-list">
+                                <li>Designed and delivered <strong>SaifLine</strong> — a production ERP Financial System
+                                    with RESTful APIs, role-based authorization, and performance optimization via stored
+                                    procedures (<strong>35% query time reduction</strong>)</li>
+                                <li>Built <strong>HRMS</strong> — a comprehensive HR management system covering employee
+                                    profiles, fingerprint-based attendance, payroll, leaves, and hiring workflows with a
+                                    full employee self-service portal</li>
+                                <li>Developed <strong>REG?</strong> — a scalable real estate platform with property
+                                    listing, search, and administration features using Clean Architecture</li>
+                                <li>Integrated Hangfire background jobs; delivered all projects <strong>on time for
+                                        paying clients</strong></li>
+                            </ul>
                         </div>
-                        <ul class="experience-list">
-                            <li>Delivered financial and booking systems, <strong>cutting client manual effort by
-                                    ~40%</strong></li>
-                            <li>Built multi-tenant APIs handling <strong>concurrent requests without
-                                    degradation</strong></li>
-                        </ul>
                     </div>
 
-                    <div class="timeline-item card">
-                        <div class="timeline-header">
-                            <div class="timeline-role">
-                                <h4>.NET Developer</h4>
-                                <h5 class="company-name">ELC</h5>
+                    <!-- Poktco -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-role">
+                                    <h4>Backend Developer</h4>
+                                    <h5 class="company-name">Poktco
+                                        <span class="location-tag">Saudi Arabia · Remote</span>
+                                    </h5>
+                                </div>
+                                <span class="date-badge">Nov 2025 – May 2026</span>
                             </div>
-                            <span class="date-badge">Aug 2024 – Nov 2025</span>
+                            <ul class="experience-list">
+                                <li>Developed and maintained a full-featured <strong>e-commerce API</strong> using
+                                    ASP.NET Core Web API and <strong>Clean Architecture</strong></li>
+                                <li>Implemented product management, order processing, user authentication, and coupon
+                                    systems with <strong>EF Core and SQL Server</strong></li>
+                                <li>Built Excel import/export features, sales analytics, top-selling product tracking,
+                                    and <strong>low-stock alerts</strong></li>
+                                <li>Integrated <strong>multiple payment gateways</strong> and applied Redis caching
+                                    strategies for improved performance</li>
+                                <li>Implemented <strong>JWT authentication with refresh tokens</strong> and role-based
+                                    authorization for different user roles</li>
+                                <li>Optimized database queries and API endpoints, <strong>improving response time by
+                                        40%</strong>; applied SOLID principles throughout</li>
+                            </ul>
                         </div>
-                        <ul class="experience-list">
-                            <li>Optimized LINQ queries using indexes &amp; stored procedures, <strong>reducing query
-                                    time by 35%</strong></li>
-                            <li>Implemented Redis caching, <strong>improving API response time by 20%</strong></li>
-                            <li>Automated deployment scripts, <strong>reducing server downtime by 15%</strong></li>
-                            <li>Containerized environments with Docker, <strong>eliminating environment-specific bugs
-                                    entirely</strong></li>
-                            <li>Wrote xUnit test coverage, <strong>ensuring 100% core business logic
-                                    reliability</strong></li>
-                        </ul>
                     </div>
+
+                    <!-- ELC -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-role">
+                                    <h4>.NET Developer</h4>
+                                    <h5 class="company-name">ELC
+                                        <span class="location-tag">Egypt</span>
+                                    </h5>
+                                </div>
+                                <span class="date-badge">Aug 2024 – Nov 2025</span>
+                            </div>
+                            <ul class="experience-list">
+                                <li>Optimized LINQ queries via stored procedures and Redis caching, <strong>improving API
+                                        response time by 20%</strong> and reducing server downtime by <strong>15%</strong>
+                                    through CI/CD pipelines</li>
+                                <li>Authored xUnit tests covering core business logic, reducing post-deployment bugs;
+                                    containerized dev environments with <strong>Docker</strong></li>
+                                <li>Applied secure coding practices including JWT-based auth, role-based authorization,
+                                    and data validation; <strong>mentored junior developers</strong> during onboarding and
+                                    code reviews</li>
+                                <li>Managed code via Git/GitHub with branching strategies and pull request workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects section-padding">
+        <!-- ═══════════════════════════════════
+             PROJECTS SECTION
+        ═══════════════════════════════════ -->
+        <section id="projects" class="projects section-padding glass-section">
             <div class="container reveal">
                 <div class="section-header">
                     <h2 class="section-title">Featured <span class="gradient-text">Creations</span></h2>
-                    <p class="section-subtitle">Real-world applications built with precision and modern best practices.
-                    </p>
+                    <div class="section-divider"><div class="section-divider-dot"></div></div>
+                    <p class="section-subtitle">Real-world applications built with precision and modern best practices.</p>
                 </div>
                 <div class="projects-grid">
-                    <!-- Project 1: ERP -->
-                    <div class="project-card card">
-                        <div class="project-image-box">
-                            <div class="project-icon-large"><i class="fa-solid fa-wallet"></i></div>
+
+                    <!-- Project: HRMS -->
+                    <div class="project-card">
+                        <div class="project-image-box accent-pink">
+                            <div class="project-icon-large"><i class="fa-solid fa-users-gear"></i></div>
+                            <span class="project-badge badge-freelance">Freelance</span>
                             <div class="project-links-overlay">
                                 <a class="p-link"><i class="fa-solid fa-lock"></i> Private Client Project</a>
                             </div>
                         </div>
                         <div class="project-metadata">
-                            <h4 class="p-title">ERP Financial System</h4>
+                            <h4 class="p-title">HRMS – HR Management System</h4>
                             <ul class="p-bullets">
-                                <li>Built a financial transaction management system using <strong>ASP.NET Core
-                                        MVC</strong> and <strong>N-Tier Architecture</strong>.</li>
-                                <li>Implemented <strong>Repository</strong>, <strong>Unit of Work</strong>, and
-                                    <strong>Factory</strong> Design patterns for a clean, maintainable codebase.
-                                </li>
-                                <li>Integrated <strong>ASP.NET Core Identity</strong> with role-based authorization for
-                                    secure multi-user access.</li>
-                                <li>Automated background tasks using <strong>ASP.NET Core BackgroundService</strong> for
-                                    scheduled financial processing.</li>
-                                <li>Handled <strong>large financial datasets</strong> with optimized SQL queries and
-                                    indexing.</li>
-                                <li>Generated <strong>financial reports</strong> with <strong>PDF export</strong>
-                                    support.</li>
+                                <li>Built a comprehensive HR system managing employee profiles,
+                                    <strong>fingerprint-based attendance</strong>, fixed &amp; shift schedules, and
+                                    payroll operations (bonuses, deductions, penalties)</li>
+                                <li>Implemented leaves management, <strong>hiring workflows</strong>, and a dedicated
+                                    employee self-service portal</li>
+                                <li>Developed a <strong>full reporting system</strong> for HR managers to monitor
+                                    workforce performance and organizational data</li>
+                                <li>Used <strong>ASP.NET Core Web API</strong>, Clean Architecture, EF Core, and role-based
+                                    authorization</li>
                             </ul>
                             <div class="p-ps">
-                                <p><span class="ps-label problem">🔹 Problem</span> Businesses need a reliable system to
-                                    track and manage financial transactions securely</p>
+                                <p><span class="ps-label problem">🔹 Problem</span> Companies struggle to manage all
+                                    employee operations and HR data in one place</p>
+                                <p><span class="ps-label solution">🔹 Solution</span> Delivered a full-featured HR
+                                    platform with self-service portal and advanced reporting</p>
+                                <p><span class="ps-label impact">🔹 Impact</span> Automated HR workflows, reducing
+                                    manual admin effort significantly</p>
+                            </div>
+                            <div class="tech-chips">
+                                <span>ASP.NET Core</span>
+                                <span>Clean Architecture</span>
+                                <span>EF Core</span>
+                                <span>SQL Server</span>
+                                <span>JWT</span>
+                                <span>Hangfire</span>
+                                <span>Serilog</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Poktco API -->
+                    <div class="project-card">
+                        <div class="project-image-box accent-cyan">
+                            <div class="project-icon-large"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <span class="project-badge badge-work">Employment</span>
+                            <div class="project-links-overlay">
+                                <a class="p-link"><i class="fa-solid fa-lock"></i> Private Company Project</a>
+                            </div>
+                        </div>
+                        <div class="project-metadata">
+                            <h4 class="p-title">Poktco – E-commerce API</h4>
+                            <ul class="p-bullets">
+                                <li>Developed a full-featured <strong>e-commerce REST API</strong> using ASP.NET Core
+                                    Web API and Clean Architecture</li>
+                                <li>Implemented product management, order processing, coupon systems, and <strong>Excel
+                                        import/export</strong> with sales analytics</li>
+                                <li>Integrated <strong>multiple payment gateways</strong>, Redis caching, and JWT
+                                    auth with refresh tokens</li>
+                                <li>Optimized API endpoints and DB queries, <strong>improving response time by 40%</strong>
+                                </li>
+                            </ul>
+                            <div class="p-ps">
+                                <p><span class="ps-label problem">🔹 Problem</span> Business needed a scalable
+                                    e-commerce backend with analytics and multi-payment support</p>
+                                <p><span class="ps-label solution">🔹 Solution</span> Built a production-grade API
+                                    with caching, analytics, and role-based access</p>
+                                <p><span class="ps-label impact">🔹 Impact</span> 40% improvement in API response
+                                    time through caching and query optimization</p>
+                            </div>
+                            <div class="tech-chips">
+                                <span>ASP.NET Core Web API</span>
+                                <span>Clean Architecture</span>
+                                <span>EF Core</span>
+                                <span>Redis</span>
+                                <span>JWT + Refresh Tokens</span>
+                                <span>SQL Server</span>
+                                <span>SOLID</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: ERP -->
+                    <div class="project-card">
+                        <div class="project-image-box accent-purple">
+                            <div class="project-icon-large"><i class="fa-solid fa-wallet"></i></div>
+                            <span class="project-badge badge-freelance">Freelance</span>
+                            <div class="project-links-overlay">
+                                <a class="p-link"><i class="fa-solid fa-lock"></i> Private Client Project</a>
+                            </div>
+                        </div>
+                        <div class="project-metadata">
+                            <h4 class="p-title">SaifLine – ERP Financial System</h4>
+                            <ul class="p-bullets">
+                                <li>Built a financial transaction management system using <strong>ASP.NET Core
+                                        MVC</strong> and <strong>N-Tier Architecture</strong></li>
+                                <li>Implemented Repository, Unit of Work, and Factory patterns for a clean,
+                                    maintainable codebase</li>
+                                <li>Integrated <strong>ASP.NET Core Identity</strong> with role-based authorization
+                                    and <strong>Hangfire</strong> for scheduled background processing</li>
+                                <li>Generated <strong>financial reports</strong> with <strong>PDF export</strong>
+                                    support; optimized SQL queries with stored procedures (<strong>35% query
+                                        reduction</strong>)</li>
+                            </ul>
+                            <div class="p-ps">
+                                <p><span class="ps-label problem">🔹 Problem</span> Businesses need a reliable system
+                                    to track and manage financial transactions securely</p>
                                 <p><span class="ps-label solution">🔹 Solution</span> Built a full MVC web app with
                                     role-based dashboards, audit logs, and PDF reporting</p>
-                                <p><span class="ps-label impact">🔹 Impact</span> Automated scheduled financial
-                                    processing, reducing manual effort by ~40%</p>
+                                <p><span class="ps-label impact">🔹 Impact</span> Reduced manual effort by ~40%
+                                    through automated scheduled financial processing</p>
                             </div>
                             <div class="tech-chips">
                                 <span>ASP.NET Core MVC</span>
                                 <span>N-Tier</span>
                                 <span>Identity</span>
-                                <span>Repository</span>
-                                <span>Factory</span>
-                                <span>Unit of Work</span>
-                                <span>BackgroundService</span>
+                                <span>Hangfire</span>
                                 <span>AutoMapper</span>
                                 <span>Fluent Validation</span>
-                                <span>Serilog</span>
                                 <span>PDF Export</span>
+                                <span>Serilog</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 2: Talabat -->
-                    <div class="project-card card">
-                        <div class="project-image-box secondary-accent">
+                    <!-- Project: Talabat -->
+                    <div class="project-card">
+                        <div class="project-image-box">
                             <img src="Images/Talabat.jpg" alt="Talabat Food Delivery" class="project-img">
+                            <span class="project-badge badge-private">Open Source</span>
                             <div class="project-links-overlay">
-                                <a href="https://github.com/hazemkhalifa1/Talabat" target="_blank" class="p-link"><i
-                                        class="fa-brands fa-github"></i> Source</a>
-                                <a href="http://talabat.somee.com/swagger/index.html" target="_blank" class="p-link"><i
-                                        class="fa-solid fa-link"></i> Live Demo</a>
+                                <a href="https://github.com/hazemkhalifa1/Talabat" target="_blank" class="p-link">
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                                <a href="http://talabat.somee.com/swagger/index.html" target="_blank" class="p-link">
+                                    <i class="fa-solid fa-link"></i> Live Demo
+                                </a>
                             </div>
                         </div>
                         <div class="project-metadata">
                             <h4 class="p-title">Talabat – Food Delivery API</h4>
                             <ul class="p-bullets">
-                                <li>Engineered a <strong>RESTful API</strong> with 15+ endpoints using <strong>ASP.NET
-                                        Core</strong> and <strong>Onion Architecture</strong>.</li>
+                                <li>Engineered a <strong>RESTful API</strong> with 15+ endpoints using
+                                    <strong>ASP.NET Core</strong> and <strong>Onion Architecture</strong></li>
                                 <li>Integrated <strong>Redis caching</strong> to reduce database query load by
-                                    <strong>30%</strong>, with <strong>JWT-based</strong> authentication supporting
-                                    Admin, Vendor, and Customer role-based authorization.
-                                </li>
-                                <li>Architected a clean data access layer using <strong>Repository</strong>,
-                                    <strong>Unit of Work</strong>, and <strong>Specification</strong> patterns.
-                                </li>
-                                <li>Engineered <strong>15+ endpoints</strong> handling concurrent requests at scale with
-                                    <strong>optimized response times</strong>.
-                                </li>
+                                    <strong>30%</strong> with <strong>JWT-based</strong> authentication and role-based
+                                    authorization</li>
+                                <li>Architected clean data access layer using Repository, Unit of Work, and
+                                    Specification patterns</li>
+                                <li>Integrated <strong>Stripe payment</strong> and handled concurrent requests at scale
+                                    with optimized response times</li>
                             </ul>
                             <div class="p-ps">
-                                <p><span class="ps-label problem">🔹 Problem</span> Customers need a fast, reliable way
-                                    to browse restaurants and place orders online</p>
-                                <p><span class="ps-label solution">🔹 Solution</span> Delivered a production-ready API
-                                    with secure auth, caching, and payment integration</p>
-                                <p><span class="ps-label impact">🔹 Impact</span> Reduced database query load by 30%
-                                    using Redis caching & optimized response times</p>
+                                <p><span class="ps-label problem">🔹 Problem</span> Customers need a fast, reliable
+                                    way to browse restaurants and place orders online</p>
+                                <p><span class="ps-label solution">🔹 Solution</span> Delivered a production-ready
+                                    API with secure auth, caching, and payment integration</p>
+                                <p><span class="ps-label impact">🔹 Impact</span> Reduced database query load by
+                                    30% using Redis caching &amp; optimized response times</p>
                             </div>
                             <div class="tech-chips">
                                 <span>ASP.NET Core</span>
                                 <span>Onion Architecture</span>
                                 <span>Redis</span>
                                 <span>JWT</span>
-                                <span>Repository</span>
                                 <span>Stripe</span>
-                                <span>Unit of Work</span>
+                                <span>Repository</span>
                                 <span>SQL Server</span>
-                                <span>Specification</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 3: Tazkarti -->
-                    <div class="project-card card">
+                    <!-- Project: Tazkarti -->
+                    <div class="project-card">
                         <div class="project-image-box">
                             <img src="Images/Tazkarti.png" alt="Tazkarti Event Booking" class="project-img">
+                            <span class="project-badge badge-private">Open Source</span>
                             <div class="project-links-overlay">
-                                <a href="https://github.com/hazemkhalifa1/Tazkarti" target="_blank" class="p-link"><i
-                                        class="fa-brands fa-github"></i> Source</a>
-                                <a href="http://tazkarti.runasp.net/" target="_blank" class="p-link"><i
-                                        class="fa-solid fa-link"></i> Live Demo</a>
+                                <a href="https://github.com/hazemkhalifa1/Tazkarti" target="_blank" class="p-link">
+                                    <i class="fa-brands fa-github"></i> Source
+                                </a>
+                                <a href="http://tazkarti.runasp.net/" target="_blank" class="p-link">
+                                    <i class="fa-solid fa-link"></i> Live Demo
+                                </a>
                                 <a href="https://www.linkedin.com/posts/hazem-khalifa-80b8a3258_dotnet-aspnetcore-csharp-ugcPost-7445471071606317056-Vt2J?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD994ssBHvax5uNJRwFjo8WWXpBzGHTuSME"
                                     target="_blank" class="p-link">
-                                    <i class="fa-solid fa-video"></i> Demo Video
+                                    <i class="fa-solid fa-video"></i> Demo
                                 </a>
                             </div>
                         </div>
@@ -311,31 +483,25 @@
                             <h4 class="p-title">Tazkarti – Event Booking System</h4>
                             <ul class="p-bullets">
                                 <li>Created a ticket reservation system with <strong>ASP.NET Core 10 MVC</strong>,
-                                    <strong>N-Tier Architecture</strong> across 3 layers using
-                                    <strong>Repository</strong> and <strong>Unit of Work</strong> patterns.
-                                </li>
-                                <li>Integrated <strong>Stripe Checkout</strong> for payments and <strong>ASP.NET Core
-                                        Identity</strong> for 2+ role-based authentication.</li>
-                                <li>Delivered <strong>bilingual (EN/AR) RTL support</strong>, <strong>PDF ticket
-                                        generation</strong> with <strong>QR codes</strong> and <strong>Arabic text
-                                        reshaping</strong>.</li>
-                                <li>Authored <strong>20+ unit tests</strong> with <strong>xUnit and Moq</strong>,
-                                    validating <strong>100% core business logic reliability</strong>.</li>
+                                    N-Tier Architecture across 3 layers using Repository and Unit of Work patterns</li>
+                                <li>Integrated <strong>Stripe Checkout</strong> for payments and ASP.NET Core Identity
+                                    for role-based authentication</li>
+                                <li>Delivered <strong>bilingual (EN/AR) RTL support</strong>, PDF ticket generation
+                                    with QR codes and Arabic text reshaping</li>
+                                <li>Authored <strong>20+ unit tests</strong> with xUnit and Moq, validating 100% core
+                                    business logic reliability</li>
                             </ul>
                             <div class="p-ps">
-                                <p><span class="ps-label problem">🔹 Problem</span> Users need a simple, reliable way to
-                                    discover and book event tickets online</p>
+                                <p><span class="ps-label problem">🔹 Problem</span> Users need a simple, reliable way
+                                    to discover and book event tickets online</p>
                                 <p><span class="ps-label solution">🔹 Solution</span> Developed a secure, scalable
-                                    backend system with booking, payments &amp; bilingual support</p>
+                                    backend with booking, payments &amp; bilingual support</p>
                                 <p><span class="ps-label impact">🔹 Impact</span> Improved query performance by ~30%
-                                    using indexing & query optimization, and ensured reliability with 20+ unit tests</p>
+                                    using indexing &amp; ensured reliability with 20+ unit tests</p>
                             </div>
                             <div class="tech-chips">
-                                <span>ASP.NET Core</span>
-                                <span>MVC</span>
+                                <span>ASP.NET Core MVC</span>
                                 <span>N-Tier</span>
-                                <span>Repository</span>
-                                <span>Unit of Work</span>
                                 <span>Stripe</span>
                                 <span>Identity</span>
                                 <span>RTL Support</span>
@@ -343,23 +509,63 @@
                                 <span>PDF Export</span>
                                 <span>xUnit</span>
                                 <span>Moq</span>
-                                <span>Serilog</span>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Project: Real Estate -->
+                    <div class="project-card">
+                        <div class="project-image-box accent-green">
+                            <div class="project-icon-large"><i class="fa-solid fa-building"></i></div>
+                            <span class="project-badge badge-freelance">Freelance</span>
+                            <div class="project-links-overlay">
+                                <a class="p-link"><i class="fa-solid fa-lock"></i> Private Client Project</a>
+                            </div>
+                        </div>
+                        <div class="project-metadata">
+                            <h4 class="p-title">REG? – Real Estate Platform</h4>
+                            <ul class="p-bullets">
+                                <li>Developed a scalable real estate management system with <strong>property listing,
+                                        search, and administration</strong> features</li>
+                                <li>Implemented <strong>Clean Architecture</strong>, EF Core, and SQL Server for
+                                    robust data management</li>
+                                <li>Secured the platform with <strong>JWT-based authentication</strong> and role-based
+                                    authorization for different user types</li>
+                            </ul>
+                            <div class="p-ps">
+                                <p><span class="ps-label problem">🔹 Problem</span> Agencies need a centralized
+                                    platform to manage and showcase property listings</p>
+                                <p><span class="ps-label solution">🔹 Solution</span> Built a clean, secure real estate
+                                    API with advanced search and admin controls</p>
+                                <p><span class="ps-label impact">🔹 Impact</span> Streamlined property management
+                                    and improved listing visibility for the client</p>
+                            </div>
+                            <div class="tech-chips">
+                                <span>ASP.NET Core</span>
+                                <span>Clean Architecture</span>
+                                <span>EF Core</span>
+                                <span>SQL Server</span>
+                                <span>JWT</span>
+                                <span>AutoMapper</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills section-padding glass-section">
+        <!-- ═══════════════════════════════════
+             SKILLS SECTION
+        ═══════════════════════════════════ -->
+        <section id="skills" class="skills section-padding">
             <div class="container reveal">
                 <div class="section-header">
-                    <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
-                    <div class="section-line"></div>
+                    <h2 class="section-title">Technical <span class="gradient-text">Arsenal</span></h2>
+                    <div class="section-divider"><div class="section-divider-dot"></div></div>
                     <p class="section-subtitle">My core technology stack and specialized domain expertise.</p>
                 </div>
-                <div class="skills-table">
+                <div class="skills-grid">
                     <div class="skill-row">
                         <div class="skill-label"><i class="fa-solid fa-gears"></i> Backend</div>
                         <div class="skill-tags">
@@ -367,29 +573,31 @@
                             <span class="tag">Web API</span>
                             <span class="tag">C#</span>
                             <span class="tag">ASP.NET Core MVC</span>
-                            <span class="tag">Entity Framework Core</span>
-                            <span class="tag">LINQ</span>
+                            <span class="tag">.NET Framework</span>
+                            <span class="tag">SignalR</span>
                         </div>
                     </div>
                     <div class="skill-row">
-                        <div class="skill-label"><i class="fa-solid fa-database"></i> Database</div>
+                        <div class="skill-label"><i class="fa-solid fa-database"></i> Database & ORM</div>
                         <div class="skill-tags">
                             <span class="tag">SQL Server</span>
+                            <span class="tag">Entity Framework Core</span>
+                            <span class="tag">Dapper</span>
+                            <span class="tag">LINQ</span>
                             <span class="tag">Redis</span>
                         </div>
                     </div>
                     <div class="skill-row">
-                        <div class="skill-label"><i class="fa-solid fa-layer-group"></i> Design Patterns
-                            <br>&amp; Architecture
-                        </div>
+                        <div class="skill-label"><i class="fa-solid fa-layer-group"></i> Architecture</div>
                         <div class="skill-tags">
                             <span class="tag">Clean Architecture</span>
                             <span class="tag">Onion Architecture</span>
+                            <span class="tag">N-Tier</span>
                             <span class="tag">Repository</span>
                             <span class="tag">Unit of Work</span>
                             <span class="tag">CQRS</span>
-                            <span class="tag">SOLID Principles</span>
-                            <span class="tag">Factory Pattern</span>
+                            <span class="tag">SOLID</span>
+                            <span class="tag">Design Patterns</span>
                         </div>
                     </div>
                     <div class="skill-row">
@@ -397,31 +605,56 @@
                         <div class="skill-tags">
                             <span class="tag">ASP.NET Core Identity</span>
                             <span class="tag">JWT Authentication</span>
+                            <span class="tag">Refresh Tokens</span>
+                            <span class="tag">Role-Based Authorization</span>
                         </div>
                     </div>
                     <div class="skill-row">
-                        <div class="skill-label"><i class="fa-solid fa-toolbox"></i> Tools</div>
+                        <div class="skill-label"><i class="fa-brands fa-aws"></i> Cloud & DevOps</div>
+                        <div class="skill-tags">
+                            <span class="tag">Azure</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label"><i class="fa-solid fa-vial"></i> Testing</div>
+                        <div class="skill-tags">
+                            <span class="tag">xUnit</span>
+                            <span class="tag">NUnit</span>
+                            <span class="tag">Moq</span>
+                            <span class="tag">FluentAssertions</span>
+                            <span class="tag">Unit Testing</span>
+                            <span class="tag">Integration Testing</span>
+                        </div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label"><i class="fa-solid fa-toolbox"></i> Tools & Libs</div>
                         <div class="skill-tags">
                             <span class="tag">Hangfire</span>
                             <span class="tag">Serilog</span>
+                            <span class="tag">NLog</span>
                             <span class="tag">AutoMapper</span>
                             <span class="tag">Fluent Validation</span>
-                            <span class="tag">Git</span>
-                            <span class="tag">xUnit</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">BackgroundService</span>
+                            <span class="tag">Swagger</span>
+                            <span class="tag">Postman</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Why Me Section -->
-        <section id="why-me" class="why-me section-padding">
+        <!-- ═══════════════════════════════════
+             WHY ME SECTION
+        ═══════════════════════════════════ -->
+        <section id="why-me" class="why-me section-padding glass-section">
             <div class="container reveal">
                 <div class="section-header">
                     <h2 class="section-title">Why <span class="gradient-text">Me?</span></h2>
-                    <div class="section-line"></div>
+                    <div class="section-divider"><div class="section-divider-dot"></div></div>
                     <p class="section-subtitle">What sets me apart as a backend developer.</p>
                 </div>
                 <div class="why-me-grid">
@@ -430,16 +663,16 @@
                             <i class="fa-solid fa-server"></i>
                         </div>
                         <h4>Scalable Systems</h4>
-                        <p>Strong understanding of scalable backend architecture — from clean layered design to
-                            efficient caching strategies.</p>
+                        <p>Strong understanding of scalable backend architecture — from clean layered design and CQRS
+                            to efficient caching and Cloud deployment strategies.</p>
                     </div>
                     <div class="why-me-card card">
                         <div class="why-me-icon">
                             <i class="fa-solid fa-code"></i>
                         </div>
                         <h4>Clean, Maintainable Code</h4>
-                        <p>I write code that's easy to read, test, and extend. SOLID principles and design patterns are
-                            second nature.</p>
+                        <p>I write code that's easy to read, test, and extend. SOLID principles, design patterns, and
+                            comprehensive test coverage are second nature.</p>
                     </div>
                     <div class="why-me-card card">
                         <div class="why-me-icon">
@@ -447,26 +680,28 @@
                         </div>
                         <h4>Performance Obsessed</h4>
                         <p>Passionate about optimization — from SQL query tuning and Redis caching to reducing response
-                            times at every layer.</p>
+                            times at every layer. Proven 40% API improvement at Poktco.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education" class="education section-padding glass-section">
+        <!-- ═══════════════════════════════════
+             EDUCATION SECTION
+        ═══════════════════════════════════ -->
+        <section id="education" class="education section-padding">
             <div class="container reveal">
                 <div class="section-header">
-                    <h2 class="section-title">Academics & <span class="gradient-text">Growth</span></h2>
-                    <div class="section-line"></div>
+                    <h2 class="section-title">Academics &amp; <span class="gradient-text">Growth</span></h2>
+                    <div class="section-divider"><div class="section-divider-dot"></div></div>
                 </div>
                 <div class="edu-grid">
                     <div class="edu-card card">
                         <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                         <div class="edu-info">
                             <h5>Banha University</h5>
-                            <p class="degree">Bachelor of CS & AI</p>
-                            <p class="date">Grade: Very Good (2020-2024)</p>
+                            <p class="degree">Bachelor of CS &amp; AI</p>
+                            <p class="date">Grade: Very Good (2020–2024)</p>
                         </div>
                     </div>
                     <div class="edu-card card">
@@ -478,10 +713,10 @@
                         </div>
                     </div>
                     <div class="edu-card card">
-                        <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
                         <div class="edu-info">
-                            <h5>ASP.NET Core & SQL Server Diploma</h5>
-                            <p class="degree">ASP.NET Core & SQL Server Diploma</p>
+                            <h5>ASP.NET Core &amp; SQL Server Diploma</h5>
+                            <p class="degree">Specialized .NET Diploma</p>
                             <p class="date">Nov 2023 – Jul 2024</p>
                         </div>
                     </div>
@@ -489,8 +724,10 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-padding">
+        <!-- ═══════════════════════════════════
+             CONTACT SECTION
+        ═══════════════════════════════════ -->
+        <section id="contact" class="contact section-padding glass-section">
             <div class="container reveal">
                 <div class="contact-card card">
                     <div class="contact-open-badge">
@@ -501,8 +738,8 @@
                         <h2 class="gradient-text">📩 Let's Build Something Great Together</h2>
                         <p>
                             I'm actively looking for <strong>Backend .NET Developer</strong> roles.<br>
-                            If you're looking for a backend developer who can deliver scalable, production-ready systems
-                            — <strong>let’s talk.</strong>
+                            If you're looking for a backend developer who can deliver scalable, production-ready
+                            systems — <strong>let's talk.</strong>
                         </p>
                     </div>
                     <div class="contact-primary">
@@ -510,7 +747,7 @@
                             <i class="fa-solid fa-envelope"></i>
                             hazemkhalifa1250@gmail.com
                         </a>
-                        <a href="tel:+201554532035" class="contact-email-btn secondary">
+                        <a href="tel:+201554532035" class="contact-email-btn">
                             <i class="fa-solid fa-phone"></i>
                             +20 155 453 2035
                         </a>
@@ -520,10 +757,12 @@
                         </a>
                     </div>
                     <div class="contact-socials">
-                        <a href="https://linkedin.com/in/hazem-khalifa-80b8a3258" target="_blank" class="s-link"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/hazemkhalifa1" target="_blank" class="s-link"><i
-                                class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/hazemkhalifa" target="_blank" class="s-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/hazemkhalifa1" target="_blank" class="s-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -532,10 +771,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Hazem Mostafa Khalifa. Built with passion & precision.</p>
+            <p>&copy; 2026 Hazem Mostafa Khalifa. Built with <span>passion</span> &amp; precision.</p>
         </div>
     </footer>
-
 
     <script src="script.js"></script>
 </body>
